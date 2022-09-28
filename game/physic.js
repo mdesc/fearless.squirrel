@@ -14,5 +14,14 @@ function update()
         player1.decelerate(moveDistance);
 
     player1.move();
+    
+    // TODO
+    
+    enemy1.accelerate(moveDistance);
+    enemy1.move();
+
+    boss_ultime_flash_enemy.accelerate(-moveDistance);
+    boss_ultime_flash_enemy.move()
+
     controls.update();
 }
