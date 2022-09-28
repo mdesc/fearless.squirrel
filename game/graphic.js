@@ -29,13 +29,13 @@ function init()
     scene.add(player1.graphic);
 
     enemy1 = new Enemy("enemy1", 0x870a30, new THREE.Vector2(40, 0), 0);
-    enemy2 = new Enemy("enemy2", 0x870a30, new THREE.Vector2(40, 150), 0);
+    enemy2 = new Enemy("enemy2", 0x870a30, new THREE.Vector2(40, 150), 0.5);
     // enemy3 = new Enemy("enemy3", 0x870a30, new THREE.Vector2(20, 20), 0);
     scene.add(enemy1.graphic);
     scene.add(enemy2.graphic);
     // scene.add(enemy3.graphic);
     
-    light1 = new Light("sun", 0xffffff, "0,0,250");
+    light1 = new Light("sun", 0xffffff, "0,0,340");
     scene.add(light1);
 }
 
