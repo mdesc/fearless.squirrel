@@ -35,7 +35,7 @@ function init()
     scene.add(enemy2.graphic);
     // scene.add(enemy3.graphic);
     
-    light1 = new Light("sun", 0xffffff, "0,0,100");
+    light1 = new Light("sun", 0xffffff, "0,0,250");
     scene.add(light1);
 }
 
@@ -76,7 +76,7 @@ function Ground(color, size_x, size_y, nb_tile)
 
 function Light(name, color, position)
 {
-    pointLight = new THREE.PointLight(color, 50, 350);
+    pointLight = new THREE.PointLight(color, 1, 0);
 
     pointLight.position.x = position.split(',')[0];
     pointLight.position.y = position.split(',')[1];

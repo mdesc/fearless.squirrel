@@ -15,8 +15,6 @@ function update()
 
     player1.move();
     
-    // TODO
-    
     enemy1.accelerate(moveDistance);
     enemy1.move();
 
