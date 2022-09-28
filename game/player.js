@@ -23,8 +23,10 @@ var Player = function(name, color, position, direction) {
 Player.prototype.dead = function () {
     this.graphic.position.z = this.graphic.position.z-0.1;
         //Nettoyage de la div container
+    this.life = this.life - 1;
         $("#container").html("");
         jQuery('#'+this.name+' >.life').text("Tu es mort !");
+
         init();
 }
 
@@ -84,6 +86,17 @@ Player.prototype.move = function () {
         
         light1.position.x = this.position.x;
         light1.position.y = this.position.y;
+
+        if ((enemy1.position.x < this.position.x + 25) && (enemy1.position.x > this.position.x - 25))
+        {
+           
+
+            if ((enemy1.position.y < this.position.y + 25) && (enemy1.position.y > this.position.y - 25))
+            {
+                this.dead();
+                
+            }   
+        }
         //light1.position.z = this.graphic.position.z + 500;
     }
 };
