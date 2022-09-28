@@ -20,8 +20,8 @@ function update()
     enemy1.accelerate(moveDistance);
     enemy1.move();
 
-    boss_ultime_flash_enemy.accelerate(-moveDistance);
-    boss_ultime_flash_enemy.move()
+    enemy2.accelerate(moveDistance);
+    enemy2.move()
 
     controls.update();
 }

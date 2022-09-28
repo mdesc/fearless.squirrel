@@ -59,15 +59,15 @@ function bullet_collision()
             }   
         }
 
-        if ((boss_ultime_flash_enemy.position.x < player1.bullets[i].position.x + 25) && (boss_ultime_flash_enemy.position.x > player1.bullets[i].position.x - 25))
+        if ((enemy2.position.x < player1.bullets[i].position.x + 25) && (enemy2.position.x > player1.bullets[i].position.x - 25))
         {
            
 
-            if ((boss_ultime_flash_enemy.position.y < player1.bullets[i].position.y + 25) && (boss_ultime_flash_enemy.position.y > player1.bullets[i].position.y - 25))
+            if ((enemy2.position.y < player1.bullets[i].position.y + 25) && (enemy2.position.y > player1.bullets[i].position.y - 25))
             {
                 scene.remove(player1.bullets[i]);
-                boss_ultime_flash_enemy.dead();
-                scene.remove(boss_ultime_flash_enemy.graphic);
+                enemy2.dead();
+                scene.remove(enemy2.graphic);
                 
             }   
         }
